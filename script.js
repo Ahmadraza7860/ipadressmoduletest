@@ -19,7 +19,7 @@ async function getData() {
             document.getElementById("user-ip").innerHTML = IPAddress;
 
   //  const response = await fetch(`https://ipinfo.io/103.198.173.228/geo`)
-    const response = await fetch(`https://ipinfo.io/${IPAddress}?token=30dd7efacbc702`)
+    const response = await fetch(`https://ipinfo.io/${IPAddress}/geo?token=30dd7efacbc702`)
     const geoinfo = await response.json()
     console.log(geoinfo)
 
